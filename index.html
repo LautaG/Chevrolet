@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chevrolet Tracker</title>
+    <link rel="stylesheet" href="css/helpers.css">
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/glide.core.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body class="center-column">
+
+    <section id="hero" class="hero">
+        <article class="hero_glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide"><img loading="lazy" src="media/img/masthead01.jpg"
+                            alt="Nuevo Chevrolet Tracker 2021">
+                    </li>
+                    <li class="glide__slide"><img loading="lazy" src="media/img/masthead02.jpg"
+                            alt="Supera lo insuperable"></li>
+                    <li class="glide__slide"><img loading="lazy" src="media/img/masthead03.jpg"
+                            alt="Eres dueño del camino"></li>
+                </ul>
+            </div>
+        </article>
+        <img loading="lazy" id="hero_m" src="media/img/masthead01_m.jpg" alt="Nuevo Chevrolet Tracker 2021">
+
+    </section>
+    <section id="cards" class="columns is-multiline">
+        <h2 class="column is-12 is-uppercase pb-4 px-0">Supera lo insuperable</h2>
+
+        <article class="card column">
+            <div class="card_header center">
+                <h3 class="card_header_title has-text-centered is-uppercase"> Diseño</h3>
+            </div>
+            <img loading="lazy" id="diseno_img" src="media/img/card_diseno.jpg" alt="Diseño" srcset="" class="image">
+            <button id="diseno_show" onclick="diseno_show()" class="boton">Conoce más</button>
+            <button id="diseno_back" onclick="diseno_back()" class="boton boton_back">Regresar</button>
+            <div id="diseno_overlay" class="card_overlay">
+                <h4 class="block">Exterior</h4>
+                <ul class="block">
+                    <li> Techo panorámico. </li>
+                    <li>Luces diurnas LED (DRL’s).</li>
+                    <li>Rines de aluminio bitono de 17”.</li>
+                    <li>Barras de techo.</li>
+                    <li>Spoiler trasero.</li>
+                </ul>
+                <h4 class="block">Interior</h4>
+                <ul class="block">
+                    <li>Aire acondicionado automático.</li>
+                    <li>Volante deportivo forrado en piel.</li>
+                    <li>Vestiduras de tactopiel en color negro con detalles en color azul.</li>
+                    <li>Llave inteligente y botón de encendido.</li>
+                    <li>Asientos traseros abatibles 60/40.</li>
+                </ul>
+            </div>
+        </article>
+        <article class="card column">
+            <div class="card_header center">
+                <h3 class="card_header_title has-text-centered is-uppercase"> Tecnología</h3>
+            </div>
+            <img loading="lazy" id="tec_img" src="media/img/card_tec.jpg" alt="Tecnología" srcset="" class="image">
+            <button id="tec_show" onclick="tec_show()" class="boton">Conoce más</button>
+            <button id="tec_back" onclick="tec_back()" class="boton boton_back">Regresar</button>
+            <div id="tec_overlay" class="card_overlay">
+                <ul>
+                    <li>OnStar® 4G LTE Wi-Fi®. </li>
+                    <li>Sistema de infoentretenimiento Chevrolet® con conexión Bluetooth®
+                        e interfaz con Siri® Eyes Free.</li>
+                    <li>Pantalla táctil a color de 8” con Apple CarPlay™ y Android Auto™.</li>
+                    <li>Cargador inalámbrico para smartphone.</li>
+                    <li>OnStar® 4G LTE Wi-Fi®.</li>
+                    <li>Sistema de estacionado automático.</li>
+                    <li>Cámara de reversa.</li>
+                    <li>Alerta de punto ciego.</li>
+                    <li>Alerta y asistente de colisión frontal.</li>
+                    <li>Control electrónico de estabilidad StabiliTrak®.</li>
+                    <li>Asistencia de vehículos robados con sistema OnStar®.</li>
+                </ul>
+            </div>
+        </article>
+        <article class="card column">
+            <div class="card_header center">
+                <h3 class="card_header_title has-text-centered is-uppercase"> Desempeño</h3>
+            </div>
+            <img loading="lazy" id="desempeno_img" src="media/img/card_desempeno.jpg" alt="Desempeño" srcset=""
+                class="image">
+            <button id="desempeno_show" onclick="desempeno_show()" class="boton">Conoce más</button>
+            <button id="desempeno_back" onclick="desempeno_back()" class="boton boton_back">Regresar</button>
+            <div id="desempeno_overlay" class="card_overlay">
+                <ul>
+                    <li>Motor turbo eficiente de 1.2 L.</li>
+                    <li>130 HP de potencia.</li>
+                    <li>140 Lb-pie de torque.</li>
+                    <li>Sistema Stop/Start.</li>
+                    <li>Transmisión manual de 5 velocidades o automática de 6 velocidades.</li>
+                    <li>Dirección electrónica.</li>
+                </ul>
+            </div>
+        </article>
+
+        <article class="cards_glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide center">
+                        <article class="card_glide column">
+                            <div class="card_glide_header center">
+                                <h3 class="card_glide_header_title has-text-centered is-uppercase"> Diseño</h3>
+                            </div>
+                            <img loading="lazy" id="diseno_img_m" src="media/img/card_diseno.jpg" alt="Diseño" srcset=""
+                                class="image">
+                            <button id="diseno_show_m" onclick="diseno_show_m()" class="boton">Conoce más</button>
+                            <button id="diseno_back_m" onclick="diseno_back_m()"
+                                class="boton boton_back">Regresar</button>
+                            <div id="diseno_overlay_m" class="card_glide_overlay">
+                                <h4 class="block">Exterior</h4>
+                                <ul class="block">
+                                    <li> Techo panorámico. </li>
+                                    <li>Luces diurnas LED (DRL’s).</li>
+                                    <li>Rines de aluminio bitono de 17”.</li>
+                                    <li>Barras de techo.</li>
+                                    <li>Spoiler trasero.</li>
+                                </ul>
+                                <h4 class="block">Interior</h4>
+                                <ul class="block">
+                                    <li>Aire acondicionado automático.</li>
+                                    <li>Volante deportivo forrado en piel.</li>
+                                    <li>Vestiduras de tactopiel en color negro con detalles en color azul.</li>
+                                    <li>Llave inteligente y botón de encendido.</li>
+                                    <li>Asientos traseros abatibles 60/40.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="glide__slide">
+                        <article class="card_glide column">
+                            <div class="card_glide_header center">
+                                <h3 class="card_glide_header_title has-text-centered is-uppercase"> Tecnología</h3>
+                            </div>
+                            <img loading="lazy" id="tec_img_m" src="media/img/card_tec.jpg" alt="Tecnología" srcset=""
+                                class="image">
+                            <button id="tec_show_m" onclick="tec_show_m()" class="boton">Conoce más</button>
+                            <button id="tec_back_m" onclick="tec_back_m()" class="boton boton_back">Regresar</button>
+                            <div id="tec_overlay_m">
+                                <ul>
+                                    <li>OnStar® 4G LTE Wi-Fi®. </li>
+                                    <li>Sistema de infoentretenimiento Chevrolet® con conexión Bluetooth®
+                                        e interfaz con Siri® Eyes Free.</li>
+                                    <li>Pantalla táctil a color de 8” con Apple CarPlay™ y Android Auto™.</li>
+                                    <li>Cargador inalámbrico para smartphone.</li>
+                                    <li>OnStar® 4G LTE Wi-Fi®.</li>
+                                    <li>Sistema de estacionado automático.</li>
+                                    <li>Cámara de reversa.</li>
+                                    <li>Alerta de punto ciego.</li>
+                                    <li>Alerta y asistente de colisión frontal.</li>
+                                    <li>Control electrónico de estabilidad StabiliTrak®.</li>
+                                    <li>Asistencia de vehículos robados con sistema OnStar®.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="glide__slide">
+                        <article class="card_glide column">
+                            <div class="card_glide_header center">
+                                <h3 class="card_glide_header_title has-text-centered is-uppercase"> Desempeño</h3>
+                            </div>
+                            <img loading="lazy" id="desempeno_img_m" src="media/img/card_desempeno.jpg" alt="Desempeño"
+                                srcset="" class="image">
+                            <button id="desempeno_show_m" onclick="desempeno_show_m()" class="boton">Conoce más</button>
+                            <button id="desempeno_back_m" onclick="desempeno_back_m()"
+                                class="boton boton_back">Regresar</button>
+                            <div id="desempeno_overlay_m">
+                                <ul>
+                                    <li>Motor turbo eficiente de 1.2 L.</li>
+                                    <li>130 HP de potencia.</li>
+                                    <li>140 Lb-pie de torque.</li>
+                                    <li>Sistema Stop/Start.</li>
+                                    <li>Transmisión manual de 5 velocidades o automática de 6 velocidades.</li>
+                                    <li>Dirección electrónica.</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button loading="lazy" class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                    <img src="media/img/arrow.png" alt="Atrás" />
+                </button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                    <img loading="lazy" src="media/img/arrow.png" alt="Siguiente" />
+                </button>
+            </div>
+        </article>
+    </section>
+
+    <section id="elige">
+        <h2 class="is-uppercase pb-4 px-0">elige tu camino, avanza y deja huella</h2>
+        <article id="grilla_elige">
+            <div id="grilla_elige_left">
+                <div class="video_left">
+                    <img loading="lazy" id="video_left_img" src="media/video/video_left.jpg"
+                        alt="Sistema de estacionamiento Automático">
+                    <button id="video_left_park_play" onclick="reproducir_left();play_video_left();" class="play"><img
+                            src="media/img/play.png" alt=""></button>
+                    <video preload="none" id="video_left_park" src="media/video/Tracker_park_V02.mp4" controls></video>
+                </div>
+                <img loading="lazy" src="media/img/left1.jpg" alt="Tracker vista trasera">
+
+                <div id="grilla_elige_left_min">
+                    <img src="media/img/leftmin1.jpg" alt="Tracker vista frontal">
+                    <img src="media/img/leftmin2.jpg" alt="Interior">
+                    <img src="media/img/leftmin3.jpg" alt="Panel interior">
+                    <img src="media/img/leftmin4.jpg" alt="Techo panorámico">
+                    <img src="media/img/leftmin5.jpg" alt="Faros LED">
+                    <img src="media/img/leftmin6.jpg" alt="Gran espacio para equipaje">
+                </div>
+
+            </div>
+            <div id="grilla_elige_right">
+                <div class="video_right_1">
+                    <img loading="lazy" id="video_right_1_img" src="media/video/video_right_top.jpg" alt="Video reel">
+                    <button id="video_right_1_play" onclick="reproducir_right();play_video_right_1();" class="play"><img
+                            src="media/img/play.png" alt=""></button>
+                    <video preload="none" id="video_right_1"
+                        src="media/video/CHEVROLET_TRACKER_GWMN0219000H_MASTER_1.mp4" controls></video>
+                </div>
+                <div id="cotiza">
+                    <img loading="lazy" id="cotiza_img" src="media/img/cotiza.jpg" alt="Cotiza tu tracker">
+                    <div id="cotiza_text">
+                        <h3 class="is-uppercase pb-4 px-0">Tenemos el mejor plan para ti</h3>
+                        <a href="#formulario" class="center">Cotízala</a>
+
+                    </div>
+                </div>
+                <div class="video_right_2">
+                    <img loading="lazy" id="video_right_2_img" src="media/video/video_right_bottom.jpg"
+                        alt="Sistema de estacionamiento Semi-Automático">
+                    <button id="video_right_2_play" onclick="reproducir_right_2();play_video_right_2();"
+                        class="play"><img src="media/img/play.png" alt=""></button>
+                    <video preload="none" id="video_right_2"
+                        src="media/video/CHEVROLET_TRACKER_GWMN0279000H_MASTER_1.mp4" controls></video>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="espec">
+        <h2 class="is-uppercase pb-4 px-0">diseñada pensando en ti</h2>
+        <img loading="lazy" src="media/img/especificaciones.jpg" alt="Especificaciones" class="image ws">
+        <img loading="lazy" src="media/img/especificaciones_m.jpg" alt="Especificaciones" class="image m">
+    </section>
+
+    <section id="d_360">
+        <h2 class="is-uppercase pb-4 px-0">Descubre su interior</h2>
+        <iframe loading="lazy" src="https://assets.gm.com/Chevrolet360sGlobal/MX/es/CH/tracker/tracker/" frameborder="0"
+            scrolling="no" style="width: 100%; height: 510px;"></iframe>
+    </section>
+    <section id="grilla_datos_title">
+        <h2 id="grilla_d_t" class="is-uppercase pb-4 px-0">PERSONALIZA TU NUEVA
+            CHEVROLET TRACKER</h2>
+        <h2 id="grilla_d_t_m" class="is-uppercase pb-4 px-0">PERSONALIZA TU NUEVA <br>
+            CHEVROLET TRACKER</h2>
+    </section>
+
+    <section id="grilla_datos" class="center-column">
+        <div id="formulario"></div>
+        <iframe src="https://comunicaciongm.com.mx/gm_forms/mercadolibre/tracker#grid" loading="lazy" frameborder="0"
+            scrolling="no" style=" width: 100%;
+            height: 1400px; scale: 91%; "></iframe>
+    </section>
+
+    <section id="footer_chev" class="center-column">
+
+        <div><img loading="lazy" src="media/img/logo.png" alt="Chevrolet">
+        </div>
+        <div class="fnr"><img loading="lazy" src="media/img/find_new_roads.png" alt="Find new roads"></div>
+
+        <a href="https://www.chevrolet.com.mx/ayuda/legal">Ver terminos y condiciones</a>
+    </section>
+
+
+    <script src="js/cards.js"></script>
+    <script src="js/glide.min.js"></script>
+
+    <script>
+        const config = {
+            type: "carousel",
+            perView: 1,
+            animationDuration: 600,
+            autoplay: 3500,
+            gap: 0,
+        };
+        new Glide(".hero_glide", config).mount();
+        const config_card = {
+            type: "slider",
+            perView: 1,
+            animationDuration: 600,
+        };
+        new Glide(".cards_glide", config_card).mount();
+    </script>
+
+    <script type="text/javascript">
+        window.reproducir_left = function () {
+            document.getElementById("video_left_park").play();
+        };
+        window.reproducir_right = function () {
+            document.getElementById("video_right_1").play();
+        };
+        window.reproducir_right_2 = function () {
+            document.getElementById("video_right_2").play();
+        };
+
+        function play_video_left() {
+            document.getElementById("video_left_park").style.display = "block";
+            document.getElementById("video_left_img").style.display = "none";
+            document.getElementById("video_left_park_play").style.display = "none";
+        };
+
+        function play_video_right_1() {
+            document.getElementById("video_right_1").style.display = "block";
+            document.getElementById("video_right_1_img").style.display = "none";
+            document.getElementById("video_right_1_play").style.display = "none";
+        };
+
+        function play_video_right_2() {
+            document.getElementById("video_right_2").style.display = "block";
+            document.getElementById("video_right_2_img").style.display = "none";
+            document.getElementById("video_right_2_play").style.display = "none";
+        };
+    </script>
+    <script>
+        (function (e, t, n, r) {
+            e["GoogleAnalyticsObject"] = n;
+            (e[n] =
+                e[n] ||
+                function () {
+                    (e[n].q = e[n].q || []).push(arguments);
+                }),
+            (e[n].l = 1 * new Date());
+            var i = t.createElement("iframe");
+            (i.frameElement || i).style.cssText =
+                "width: 0; height: 0; border: 0; position: absolute";
+            i.src = "javascript:false";
+            i.id = "GoogleAnalyticsIframe";
+            var s = t.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(i, s);
+            var o = i.contentWindow.document;
+            o.open().write(
+                '<body onload="' +
+                "var js = document.createElement('script');" +
+                "js.src = '" +
+                r +
+                "';" +
+                'document.body.appendChild(js);">'
+            );
+            o.close();
+        })(
+            window,
+            document,
+            "meli_ga",
+            "https://a248.e.akamai.net/analytics.mlstatic.com/ga/mlm-ml-analytics.min.js"
+        );
+        meli_ga("set", "title", "app-old-world");
+        meli_ga("send", "pageview", "/OLD_WORLD/chevrolet-tracker");
+    </script>
+    <script type="text/javascript" src="js/bundle_js.js">
+    </script>
+
+</body>
+
+</html>
